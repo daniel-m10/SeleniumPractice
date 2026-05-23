@@ -22,7 +22,7 @@ public static class DriverFactory
 
   private static ChromeDriver CreateChromeDriver(bool headless)
   {
-    new DriverManager().SetUpDriver(new ChromeConfig());
+    new DriverManager().SetUpDriver(new ChromeConfig(), "148.0.7778.179");
     var options = new ChromeOptions();
     if (headless) options.AddArgument("--headless=new");
     options.AddArgument("--no-sandbox");
