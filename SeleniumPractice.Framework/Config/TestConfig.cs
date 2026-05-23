@@ -4,7 +4,7 @@ public static class TestConfig
 {
   public static string BaseUrl => "https://www.saucedemo.com";
 
-  public static string ValidaUsername => "standard_user";
+  public static string ValidUsername => "standard_user";
   public static string ValidPassword => "secret_sauce";
   public static string LockedUsername => "locked_out_user";
 
