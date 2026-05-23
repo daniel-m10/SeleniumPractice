@@ -6,7 +6,7 @@ public class BaseDriver : IDisposable
 {
   public IWebDriver Driver { get; private set; }
 
-  public BaseDriver(BrowserType browser = BrowserType.Chrome, bool headless = false)
+  public BaseDriver(BrowserType browser = BrowserType.Chrome, bool headless = true)
   {
     Driver = DriverFactory.CreateDriver(browser, headless);
     Driver.Manage().Window.Maximize();
